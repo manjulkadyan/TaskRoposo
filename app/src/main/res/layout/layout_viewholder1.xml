@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/usernames"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/Folowers"
+        android:layout_below="@id/usernames"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/circle"
+        android:layout_below="@id/Folowers"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+    <TextView
+        android:id="@+id/followings"
+        android:textColor="@color/username"
+        android:layout_below="@id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/Followerher"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:text="Follow"
+        android:layout_below="@id/followings"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

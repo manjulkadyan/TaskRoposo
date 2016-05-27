@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/titlefeeds"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/descriptionfeeds"
+        android:layout_below="@id/titlefeeds"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/twitter_avatarfeeds"
+        android:layout_below="@id/descriptionfeeds"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        />
+    <TextView
+        android:id="@+id/usernamefeeds"
+        android:textColor="@color/username"
+        android:layout_below="@id/twitter_avatarfeeds"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/urlfeeds"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/usernamefeeds"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/verbfeeds"
+        android:layout_below="@id/urlfeeds"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/types"
+        android:layout_below="@id/verbfeeds"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+</LinearLayout>

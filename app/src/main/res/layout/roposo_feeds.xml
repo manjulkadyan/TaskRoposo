@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlefeed"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/descriptionfeed"
+        android:layout_below="@id/titlefeed"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/twitter_avatarfeed"
+        android:layout_below="@id/descriptionfeed"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginRight="60dp"
+        />
+    <TextView
+        android:id="@+id/usernamefeed"
+        android:textColor="@color/username"
+        android:layout_below="@id/twitter_avatarfeed"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/urlfeed"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/usernamefeed"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/verbfeed"
+        android:layout_below="@id/urlfeed"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_below="@id/verbfeed"
+        android:textColor="@color/username"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
